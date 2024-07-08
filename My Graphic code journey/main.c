@@ -18,6 +18,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
     MSG msg;
     BOOL bQuit = FALSE;
     float theta = 0.0f;
+    float cheese = 0.0f;
 
     /* register window class */
     wcex.cbSize = sizeof(WNDCLASSEX);
@@ -30,7 +31,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
     wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
     wcex.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
     wcex.lpszMenuName = NULL;
-    wcex.lpszClassName = "GLSample";
+    wcex.lpszClassName = "HELP I AM IN PAIN";
     wcex.hIconSm = LoadIcon(NULL, IDI_APPLICATION);;
 
 
@@ -39,8 +40,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
     /* create main window */
     hwnd = CreateWindowEx(0,
-                          "GLSample",
-                          "OpenGL Sample",
+                          "HELP I AM IN PAIN",
+                          "Stupid TRIANGLE TOOK ME 3 HRS TO FIGURE IT OUT",
                           WS_OVERLAPPEDWINDOW,
                           CW_USEDEFAULT,
                           CW_USEDEFAULT,
@@ -80,14 +81,15 @@ int WINAPI WinMain(HINSTANCE hInstance,
             glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
             glClear(GL_COLOR_BUFFER_BIT);
 
+
             glPushMatrix();
-            glRotatef(theta, 0.0f, 0.0f, 1.0f);
+            glRotatef(theta, 0.0f, 1.0f, 0.0f);
 
             glBegin(GL_TRIANGLES);
 
-                glColor3f(1.0f, 0.0f, 0.0f);   glVertex2f(0.0f,   1.0f);
-                glColor3f(0.0f, 1.0f, 0.0f);   glVertex2f(0.87f,  -0.5f);
-                glColor3f(0.0f, 0.0f, 1.0f);   glVertex2f(-0.87f, -0.5f);
+                glColor3f(2.0f, 0.0f, 0.0f);   glVertex2f(0.0f,   1.0f);
+                glColor3f(2.0f, 0.0f, 0.0f);   glVertex2f(0.87f,  -0.5f);
+                glColor3f(2.0f, 0.0f, 0.0f);   glVertex2f(-0.87f, -0.5f);
 
             glEnd();
 
