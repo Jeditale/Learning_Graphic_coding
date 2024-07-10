@@ -45,8 +45,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
                           WS_OVERLAPPEDWINDOW,
                           CW_USEDEFAULT,
                           CW_USEDEFAULT,
-                          256,
-                          256,
+                          500,
+                          500,
                           NULL,
                           NULL,
                           hInstance,
@@ -83,13 +83,15 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 
             glPushMatrix();
-            glRotatef(theta, 0.0f, 1.0f, 0.0f);
+            glRotatef(theta, 1.0f, 19.0f, 0.0f);
+
 
             glBegin(GL_TRIANGLES);
 
                 glColor3f(2.0f, 0.0f, 0.0f);   glVertex2f(0.0f,   1.0f);
-                glColor3f(2.0f, 0.0f, 0.0f);   glVertex2f(0.87f,  -0.5f);
+                glColor3f(2.0f, 5.0f, 0.0f);   glVertex2f(0.87f,  -0.5f);
                 glColor3f(2.0f, 0.0f, 0.0f);   glVertex2f(-0.87f, -0.5f);
+
 
             glEnd();
 
