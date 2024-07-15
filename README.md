@@ -10,3 +10,10 @@ but I been playing RB6, Minecraft I was Interesting how it was render at first I
 I did slips into something else many times like doing racing and stuff. but thats not the point! now this is spark me a joy and I was looking for a project to working on and this is close to what I like which is VIDEO GAMES!
 :)
 
+Makes sure to install these programs
+
+1.We suggest using Visual Studio 2017 Express for Desktop as a compiler. You can download it for free here https://www.visualstudio.com/en-US/products/visual-studio-express-vs. MAKE SURE YOU CHOOSE CUSTOM INSTALLATION AND CHECK C++. 
+
+2.Download CMake from here and install it http://www.cmake.org/cmake/resources/software.html.
+
+3.Download the source code and unzip it, for instance in C:\Users\XYZ\Projects\OpenGLTutorials\ . http://www.opengl-tutorial.org/download/ 
